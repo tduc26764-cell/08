@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(11, 169, 236);
+
+}
+
+nav {
+    width: 100%;
+    background-color: #e87500;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    width: 180px;
+    padding: 22px 25px;
+
+    background-color: #252525;
+    color: white;
+
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+
+    border: 2px solid green;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    padding: 0;
+    margin: 0;
+
+    z-index: 1000;
+}
+
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+
+nav ul li ul li {
+    position: relative;
+}
+
+nav ul li ul li a {
+    width: 250px;
+    padding: 22px 25px;
+}
+
+
+
+nav ul li ul li ul {
+    display: none;
+
+    position: absolute;
+
+    
+    left: 100%;
+    top: 0;
+}
+
+/* Khi rê vào Tutorials */
+nav ul li ul li:hover > ul {
+    display: block;
+}
+
+
+nav ul li ul li ul li a {
+    width: 230px;
+}
